@@ -39,8 +39,8 @@
 
 
 </head>
-<body >
-    <header class="max-w-6xl mx-auto">
+<body class="max-w-[1440px]">
+    <header class=" mx-auto mt-12 p-32">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -55,7 +55,7 @@
                       <li class="text-pPrimary70 font-medium text-lg"><a>Search</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">P-Ticket</a>
+                  <a class="btn text-4xl font-extrabold text-tPrimary">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -66,27 +66,34 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn">Bus <img src="images/bus-icon.png" alt=""></a>
+                  <a class="btn bg-[#1DD1001A]">Bus <img src="images/bus-icon.png" alt=""></a>
                 </div>
               </div>
         </nav>
         <!-- banner starts here -->
-        <div>
-            <div class="bg-no-repeat bg-cover h-auto pt-20 pb-32" style="background-image: url(images/banner.png);">
+        <div class="mt-8">
+            <div class="bg-no-repeat bg-cover px-24 pt-20 pb-32" style="background-image: url(images/banner.png);">
                 <div class="hero-overlay bg-gradient-to-r from-pPrimary50 to-pPrimary0"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn-primary">Get Started</button>
+                    <h1 class="mb-5 text-6xl font-extrabold font-font-raleway text-white">End-to-End Travel with <br><span class="text-btnGreen">P Paribahan</span></h1>
+                    <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined . </p>
+                    <button class="btn bg-btnGreen mt-8 text-tPrimary font-bold border-0 text-xl">Buy Tickets</button>
                   </div>
                 </div>
               </div>
-            <div class="banner w-auto h-auto">
+
+            <div class="banner">
                 <h1 class="text-white ">End-to-End travel with <br>
                 <span class="text-[#1DD100]">P Paribahan</span></h1>
-                <!-- <img src="images/banner.png" alt=""> -->
-                <p></p>
+                <div class="hero-overlay bg-gradient-to-r from-pPrimary50 to-pPrimary0"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-6xl font-extrabold font-font-raleway text-white">End-to-End Travel with <br><span class="text-btnGreen">P Paribahan</span></h1>
+                    <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined . </p>
+                    <button class="btn bg-btnGreen mt-8 text-tPrimary font-bold border-0 text-xl">Buy Tickets</button>
+                  </div>
+                </div>
             </div>
             <div>
                 <div class="px-10 py-8 flex items-center">
@@ -101,6 +108,32 @@
 
     </header>
     <main>
+        <section class="mt-24 mx-auto items-center text-center">
+            <h2 class="text-tPrimary text-4xl mb-12 font-font-Raleway font-bold">Best offers for you</h2>
+            <div class="flex justify-center gap-6">
+                <div class="bg-[#FFBF0F] flex rounded-3xl">
+                    <div class="font-font-inte p-12">
+                        <h3 class="font-extrabold text-4xl text-pPrimary80">15% OFF</h3>
+                        <p class="font-semibold text-xl text-pPrimary80">on your next purchase</p>
+                        <p class="font-medium text-lg text-pPrimary50">use by january 2024</p>
+                    </div >
+                    <div><img src="images/cupon-devider.png" alt=""></div>
+                    <div class="font-font-raleway p-6"><h3 class="font-bold text-3xl text-tPrimary">NEW15</h3>
+                    <p class="font-medium  text-xl text-pPrimary40">Coupon Code</p></div>
+                </div>
+                <div class="bg-[#F78C9C] flex rounded-3xl">
+                    <div class="font-font-inte p-12">
+                        <h3 class="font-extrabold text-4xl text-pPrimary80">20% OFF</h3>
+                        <p class="font-semibold text-xl text-pPrimary80">on your next purchase</p>
+                        <p class="font-medium text-lg text-pPrimary50">use by january 2024</p>
+                    </div >
+                    <div><img src="images/cupon-devider.png" alt=""></div>
+                    <div class="font-font-raleway p-6"><h3 class="font-bold text-3xl text-tPrimary">Couple 20</h3>
+                    <p class="font-medium  text-xl text-pPrimary40">Coupon Code</p></div>
+                </div>
+            </div>
+            <button class="btn border-btnGreen text-btnGreen mt-16">See All Offers</button>
+        </section>
         <!-- Seat Selection section -->
         <section>
             <div>
@@ -118,7 +151,37 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="bg-tPrimary text-white px-32 py-32 font-font-inter">
+        <div class="flex justify-between">
+            <div>
+                <h2 class="text-3xl font-extrabold font-font-raleway ">P-Ticket</h2>
+                <p class="mt-4">P-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+            <div>
+                <p class="font-semibold text-xl font-font-raleway">Download our app</p>
+                <button class="flex items-center">
+                    <div class="flex items-center text-start border-solid border-white border-2 p-2 rounded-lg mt-2">
+                    <img src="images/playstore.png" alt="">
+                    <div>
+                        <p>Get it on</p>
+                        <p class="text-xl font-medium">Google play</p>
+                    </div>
+                </div> 
+            </button>               
+            </div>
+
+        </div>
+        <div class="flex justify-between border-dashed border-[#FFFFFF4D] border-t-2 p-8 mt-12">
+            <div>
+                <p>&copy;all rights reserved, p-ticket services limited.2024</p>
+            </div>
+            <div class="flex gap-8">
+                <p class="font-medium">Terms & condition</p>
+                <p class="font-medium">Return & refund policy</p>
+                <p class="font-medium">Privacy policy</p>
+
+            </div>
+        </div>
 
     </footer>
 
