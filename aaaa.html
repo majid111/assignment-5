@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     
+
+    <!-- daisy and tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            tPrimary: '#030712',
+            pPrimary80: '#030712CC',
+            pPrimary70: '#030712B3',
+            pPrimary60: '#03071299',
+            pPrimary50: '#03071280',
+            pPrimary40: '#03071266',
+            pPrimary0: '#03071200',
+            btnGray: '#F7F8F8',
+            btnGreen: '#1DD100',
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- styles are here -->
+<link rel="stylesheet" href="Styles/banner.css">
+
+</head>
+<body class="max-w-[1170px] mx-auto">
+    <section>
+        <div class="flex">
+            <div>
+                <h2 class="text-2xl text-tPrimary mb-6 ">Select Your Seat</h2>
+                <div class="my-6 py-4 flex justify-between  border-dashed border-y-2">
+                    <p class="flex items-center"><img src="images/seat-gray.png" alt=""> <span>Available</span></p>
+                    <p class="flex items-center"><img src="images/seat-green-filled.png" alt=""> <span>Selected</span></p>
+                </div>
+                <div class="text-right mb-6"><button class="btn py-4 px-9 items-center"><img src="images/wheel.svg" alt=""></button></div>
+                <div class="grid grid-cols-5 items-center gap-7">
+                    <p class="text-center">A</p>
+                    <button id="a1" class="btn py-4 px-11">A1</button>
+                    <button id="a2" class="btn py-4 px-11">A2</button>
+                    <button id="a3" class="btn py-4 px-11">A3</button>
+                    <button id="a4" class="btn py-4 px-11">A4</button>
+                    <p class="text-center">B</p> 
+                    <button id="b1" class="btn py-4 px-11">B1</button>
+                    <button id="b2" class="btn py-4 px-11">B2</button>
+                    <button id="b3" class="btn py-4 px-11">B3</button>
+                    <button id="b4" class="btn py-4 px-11">B4</button>
+                    <p class="text-center">C</p>
+                    <button id="c1" class="btn py-4 px-11">C1</button>
+                    <button id="c2" class="btn py-4 px-11">C2</button>
+                    <button id="c3" class="btn py-4 px-11">C3</button>
+                    <button id="c4" class="btn py-4 px-11">C4</button>
+                    <p class="text-center">D</p> 
+                    <button id="d1" class="btn py-4 px-11">D1</button>
+                    <button id="d2" class="btn py-4 px-11">D2</button>
+                    <button id="d3" class="btn py-4 px-11">D3</button>
+                    <button id="d4" class="btn py-4 px-11">D4</button>
+                    <p class="text-center">E</p>
+                    <button id="e1" class="btn py-4 px-11">E1</button>
+                    <button id="e2" class="btn py-4 px-11">E2</button>
+                    <button id="e3" class="btn py-4 px-11">E3</button>
+                    <button id="e4" class="btn py-4 px-11">E4</button>
+                    <p class="text-center">F</p> 
+                    <button id="f1" class="btn py-4 px-11">f1</button>
+                    <button id="f2" class="btn py-4 px-11">f2</button>
+                    <button id="f3" class="btn py-4 px-11">f3</button>
+                    <button id="f4" class="btn py-4 px-11">f4</button>
+                    <p class="text-center">G</p>
+                    <button id="g1" class="btn py-4 px-11">G1</button>
+                    <button id="g2" class="btn py-4 px-11">G2</button>
+                    <button id="g3" class="btn py-4 px-11">G3</button>
+                    <button id="g4" class="btn py-4 px-11">G4</button>
+                    <p class="text-center">H</p> 
+                    <button id="h1" class="btn py-4 px-11">H1</button>
+                    <button id="h2" class="btn py-4 px-11">H2</button>
+                    <button id="h3" class="btn py-4 px-11">H3</button>
+                    <button id="h4" class="btn py-4 px-11">H4</button>
+                    <p class="text-center">I</p>
+                    <button id="i1" class="btn py-4 px-11">I1</button>
+                    <button id="i2" class="btn py-4 px-11">I2</button>
+                    <button id="i3" class="btn py-4 px-11">I3</button>
+                    <button id="i4" class="btn py-4 px-11">I4</button>
+                    <p class="text-center">J</p> 
+                    <button id="j1" class="btn py-4 px-11">J1</button>
+                    <button id="j2" class="btn py-4 px-11">J2</button>
+                    <button id="j3" class="btn py-4 px-11">J3</button>
+                    <button id="j4" class="btn py-4 px-11">J4</button>
+                </div>
+            </div>
+            <div class="divider lg:divider-horizontal"></div> 
+            <div class="max-w-md">
+                <h2 class="text-2xl text-tPrimary mb-6 border-dashed border-b-2">Select Your Seat</h2>
+
+                <div>
+                    <div>
+                        <p>Seat <span class="bg-btnGreen text-white">0</span></p>
+                        <p>Class</p>
+                        <p>Price</p>
+                        <p>C2</p>
+                        <p>Economy</p>
+                        <p>550</p>
+                        <p>Total Price</p>
+                        <p>BDT <span>0</span></p>
+                        <p></p>
+                        
+                    </div>
+                </div> 
+                            <!-- input -->
+                <div>
+                    <label class="input input-bordered flex items-center gap-2">
+                        Name
+                        <input type="text" class="grow" placeholder="Daisy" />
+                      </label>
+                      <label class="input input-bordered flex items-center gap-2">
+                        Email
+                        <input type="text" class="grow" placeholder="daisy@site.com" />
+                      </label>
+                      <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Search" />
+                        <kbd class="kbd kbd-sm">⌘</kbd>
+                        <kbd class="kbd kbd-sm">K</kbd>
+                      </label>
+                      <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Search" />
+                        <span class="badge badge-info">Optional</span>
+                      </label>
+                      <!-- coupon Button -->
+                      <div class="join">
+                        <input class="input input-bordered join-item" placeholder="Email"/>
+                        <button class="btn join-item rounded-r-full">Subscribe</button>
+                      </div>
+                      <button class="btn bg-btnGreen text-white text-center">Next</button>
+                      <div class="flex justify-between">
+                        <p class="border-b-2">Terms and Conditions</p>
+                        <p class="border-b-2">Cancellation Policy</p>
+                      </div>
+                </div>
+    
+    
+            </div>
+        </div>
+    </section>
+</body>
+</html>
