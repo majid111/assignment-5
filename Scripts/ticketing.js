@@ -12,6 +12,7 @@ function clickListener() {
 function addTicket(ticket) {
     // indexing in array
     ticketContainer.push(ticket);
+    console.log(ticketContainer);
     // Setting bg color
     setBgColor(ticket);
     // showing the ticket
@@ -34,6 +35,7 @@ function addTicket(ticket) {
     // reducing total number
     reduceTotalSeat('total-Seat');
     increaseNumber('seat-Number');
+    total();
 
 
 }
@@ -55,19 +57,28 @@ function removeTicket(ticket) {
     // reducing total number
     reduceTotalSeat('seat-Number');
     increaseNumber('total-Seat');
+    total();
+    discount();
 
 }
 
 
 function discount() {
-    getInnerText('coupon-input');
-    console.log(getInnerText('coupon-input'));
+    const a=getElement("coupon-input").value;
+    if(a==="NEW15"){
+        const total = getInnerText('grand-total');
+    const discount = ticketContainer.length * 550*.15;
+    total = ticketContainer.length * 550-discount;
+    }
+    else if (a==='Couple 20'){
+        const total = getInnerText('grand-total');
+    const discount = ticketContainer.length * 550*.20;
+    total = ticketContainer.length * 550-discount;
+    }
+    // console.log(getInnerText('coupon-input'));
 }
 
-function grandTotal() {
-    const GT = getInnerText('grand-total');
-    gt = ticketContainer.length * 550;
-}
 
+document.getElementById('coupon-input')
 
 console.log('Ticketing connected')

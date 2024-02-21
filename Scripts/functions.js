@@ -35,6 +35,33 @@ const number= parseInt(totalNumber)+1;
 getInnerText(seat)=number;
 }
 
+function total() {
+    const total = getInnerText('total-taka');
+    total = ticketContainer.length * 550;
+}
+// function reduceTotal(seat){
+//     const totalNumber=getInnerText(seat);
+// const number= parseInt(totalNumber)-550;
+// getInnerText(seat)=number;
+// }
+// function increaseTotal(seat){
+//     const totalNumber=getInnerText(seat);
+// const number= parseInt(totalNumber)+1;
+// getInnerText(seat)=number;
+// }
+function reduceGrandTotal(gt){
+    total();
+    const totalNumber=getInnerText(gt);
+const number= parseInt(totalNumber)-1;
+getInnerText(gt)=number;
+}
+function increaseGrandTotal(gt){
+    total();
+    const totalNumber=getInnerText(gt);
+const number= parseInt(totalNumber)+1;
+getInnerText(gt)=number;
+}
+
 
 // function getInputValue(element){
 //     const getByID=document.getElementById('element') ;
