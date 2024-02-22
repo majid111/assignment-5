@@ -9,11 +9,11 @@ function getInnerText(git) {
 // function click(s){
 //     s.addEventListener("click", clickListener);
 // }
-function setBgColor(he){
-    
+function setBgColor(he) {
+
     getElement(he).classList.add('bg-btnGreen');
 }
-function removeBgColor(re){
+function removeBgColor(re) {
     getElement(re).classList.remove('bg-btnGreen');
 }
 
@@ -24,20 +24,31 @@ function ShowElement(re) {
     getElement(re).classList.remove('hidden');
 }
 
-function reduceTotalSeat(seat){
-    const totalNumber=getInnerText(seat);
-const number= parseInt(totalNumber)-1;
-getInnerText(seat)=number;
+function increaseTotalSeat(seat) {
+    const totalNumber = getInnerText(seat);
+    const number = parseInt(totalNumber) + 1;
+    // console.log(number);
+    document.getElementById('total-Seat').innerText = number;
 }
-function increaseNumber(seat){
-    const totalNumber=getInnerText(seat);
-const number= parseInt(totalNumber)+1;
-getInnerText(seat)=number;
+function reduceTotalSeat(seat) {
+    const totalNumber = getInnerText(seat);
+    const number = parseInt(totalNumber) - 1;
+    // console.log(number);
+    document.getElementById('total-Seat').innerText = number;
+}
+function increaseNumber(seat) {
+    const totalNumber = getInnerText(seat);
+    const number = parseInt(totalNumber) + 1;
+    document.getElementById('seat-Number').innerText = number;
+}
+function reduceNumber(seat) {
+    const totalNumber = getInnerText(seat);
+    const number = parseInt(totalNumber) - 1;
+    document.getElementById('seat-Number').innerText = number;
 }
 
 function total() {
-    const total = getInnerText('total-taka');
-    total = ticketContainer.length * 550;
+    document.getElementById('total-taka').innerText = ticketContainer.length * 550;
 }
 // function reduceTotal(seat){
 //     const totalNumber=getInnerText(seat);
@@ -48,18 +59,15 @@ function total() {
 //     const totalNumber=getInnerText(seat);
 // const number= parseInt(totalNumber)+1;
 // getInnerText(seat)=number;
+// // }
+// function reduceGrandTotal(gt) {
+//     total();
+//     const totalNumber = getInnerText(gt);
+//     const number = parseInt(totalNumber) - 1;
+//     getInnerText(gt) = number;
 // }
-function reduceGrandTotal(gt){
-    total();
-    const totalNumber=getInnerText(gt);
-const number= parseInt(totalNumber)-1;
-getInnerText(gt)=number;
-}
-function increaseGrandTotal(gt){
-    total();
-    const totalNumber=getInnerText(gt);
-const number= parseInt(totalNumber)+1;
-getInnerText(gt)=number;
+function grandTotal() {
+    document.getElementById('grand-total').innerText = ticketContainer.length * 550;
 }
 
 
