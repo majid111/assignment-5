@@ -71,17 +71,18 @@ function discount() {
     const a = getElement("coupon-input").value;
     if (a === "NEW15") {
         const discount = ticketContainer.length * 550 * .15;
-        console.log(document.getElementById('grand-total'));
-        console.log('discount', discount);
         document.getElementById('grand-total').innerText = ticketContainer.length * 550 - discount;
         getElement('apply-btn').classList.add('btn-disabled');
+        getElement('discounted-price-display').classList.remove('hidden');
+        getElement('discounted-price').innerText=discount;
     }
     else if (a === 'Couple 20') {
         const discount = ticketContainer.length * 550 * .20;
-        console.log(document.getElementById('grand-total'));
-        console.log('discount', discount);
         document.getElementById('grand-total').innerText = ticketContainer.length * 550 - discount;
         getElement('apply-btn').classList.add('btn-disabled');
+        getElement('discounted-price-display').classList.remove('hidden');
+        getElement('discounted-price').innerText=discount;
+
     }
     else {
         my_modal_1.showModal();
